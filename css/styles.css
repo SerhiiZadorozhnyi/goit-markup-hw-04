@@ -6,6 +6,7 @@
     --bt-primary: #F5F4FA;
     --bt-second: #2196F3;
     --background-color: #2F303A;
+    --icon-collor: #AFB1B8;
 }
 
 *{
@@ -69,6 +70,26 @@ h2{
     color: #000000;
 }
 
+/* Иконки сайта */
+.icon {
+    display: inline-block;
+    /* width: 1em;
+    height: 1em; */
+    width: 20px;
+    height: 20px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    padding: 12px;
+    --color1: var(--icon-collor);
+  }
+
+.icon:hover{
+    --color1: #FFFFFF;
+    background-color: var(--bt-second);
+    
+}
+
 /*Навигация страницы*/
 .main-nav{
     display: flex;
@@ -112,11 +133,12 @@ h2{
 
 /*Контакты*/
 .contacts-nav{
-    /* text-indent: 50px; */
-    /* width: 307px; */
-    /* padding-left: 331px; */
     display: flex;
-    /* justify-content: space-around; */
+}
+
+.contacts-nav li{
+    display: flex;
+    align-items: center;
 }
 
 .contacts-nav li:nth-child(1n+2){
@@ -140,6 +162,23 @@ h2{
     color: var(--bt-second);
 }
 
+.icon-contacts{
+    /* display: inline-block; */
+    /* width: 1em;
+    height: 1em; */
+    width: 20px;
+    height: 20px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    padding-right: 10px;
+    --color1: var(--text-color-grey);
+}
+
+.icon-contacts:hover{
+    --color1: var(--accent-color);
+}
+
 /*Контент страницы*/
 .container{
     width: 1170px;
@@ -153,15 +192,37 @@ h2{
 
 .block-one{
     background:var(--background-color);
+    background-image: url(../images/Img-overlay.jpg);
+    /* background-color: rgba(47, 48, 58, 0.4); */
     text-align: center;
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+}
+
+/* .container-block{
+    width: 1170px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: rgba(47, 48, 58, 0.4);
+} */
+
+.block-one .container{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: rgba(47, 48, 58, 0.4);
 }
 
 .div-block-one{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: rgba(47, 48, 58, 0.4); */
 }
 
 .block-one-text{
@@ -206,6 +267,12 @@ h2{
 
 .features li{
     width: 270px;
+    /* background-color: lawngreen; */
+}
+
+.features img{
+    /* background-color: indigo; */
+    padding-bottom: 30px;
 }
 
 .features h3{
@@ -215,6 +282,8 @@ h2{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-color-black);
+    padding-bottom: 10px;
+    /* background-color: lightseagreen; */
 }
 
 .features p{
@@ -223,6 +292,7 @@ h2{
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--text-color-grey);
+    /* background-color: magenta; */
 }
 
 /* Чем мы занимаемся */
@@ -286,7 +356,8 @@ h2{
 
 .commands-list li{
     width: 270px;
-    height: 368px;
+    /* height: 368px; */
+    height: 428px;
     background: var(--text-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -306,6 +377,64 @@ h2{
     letter-spacing: 0.03em;
     color: var(--text-color-grey);
     padding-top: 10px;
+}
+
+/* Постоянные клиенты */
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-div{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+
+.clients-div h2{
+    text-align: center;
+}
+
+.clients-list{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list li{
+    display: flex;
+    justify-content: space-between;
+    background-color: hotpink;
+}
+
+.clients-list img{
+    color: red;
+}
+
+/*.icon-clients {
+    display: inline-block;
+    /* width: 1em; */
+    /* height: 1em; */
+    width: 170px;
+    height: 90px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    /* padding: 12px; */ */
+    /* --color1: var(--icon-collor); */
+    /* color: #AFB1B8; */
+    /* --color1: red; */
+    fill: #565656;
+  } */
+
+.icon-clients:hover{
+    /* background: var(--text-color-white); */
+    --color1: #FFFFFF;
+    background-color: var(--bt-second);
+    /* border-radius: 50%; */
+    /* fill: green; */
 }
 
 /* Подвал страницы */
