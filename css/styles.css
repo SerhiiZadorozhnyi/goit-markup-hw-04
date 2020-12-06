@@ -155,6 +155,8 @@ h2{
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--text-color-grey);
+    display: flex;
+    align-items: center;
 }
 
 .contacts-nav a:hover,
@@ -166,26 +168,23 @@ h2{
     color: var(--bt-second);
 }
 
-.email::before{
-    margin-right: 10px;
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 12px;
-    background-image: url(../sprite.svg#icon-message);
-    /* background-color: #111111; */
-    
+.link-icon{
+    fill: currentColor;
+    padding-right: 10px;
+}
+
+.linc-icon:hover{
     fill: currentColor;
 }
 
-.telephone::before{
-    margin-right: 10px;
-    display: inline-block;
-    content: "";
+.icon-email{
+    width: 16px;
+    height: 12px;
+}
+
+.icon-smartphone{
     width: 10px;
     height: 16px;
-    background-image: url(../sprite.svg#icon-smartphone);
-    background-color: #111111;
 }
 
 .icon-contacts{
@@ -389,32 +388,60 @@ h2{
     padding-top: 10px;
 }
 
-.comands-icons{
+.social-list{
     padding-left: 32px;
     padding-right: 32px;
+    margin-top: 16px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-.icon-com{
+.social-list-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list-link:hover,
+.social-list-link:focus{
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.social-list-icon{
+    /* display: block; */
+    /* width: 44px;
+    height: 44px; */
+    /* fill: #AFB1B8; */
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* .icon-com{
     display: inline-block;
     /* width: 1em;
     height: 1em; */
-    width: 20px;
-    height: 20px;
+    /* width: 44px;
+    height: 44px;
     stroke-width: 0;
     stroke: currentColor;
-    fill: currentColor;
-    padding: 12px;
-    --color1: var(--icon-collor);
-    /* border-radius: 50%; */
-  }
+    fill: #AFB1B8;
+    --color1: var(--icon-collor); */
+  /* } */
 
 .icon-com:hover,
 .icon-com:focus{
     --color1: #FFFFFF;
     background-color: var(--bt-second);
     border-radius: 50%;
+    fill: #FFFFFF;
+    
 }
 
 /* Постоянные клиенты */
@@ -440,34 +467,30 @@ h2{
 }
 
 .clients-list li{
-    /* display: flex;
-    justify-content: space-between; */
-    /* background-color: hotpink; */
-    /* display: contents; */
+    display: flex;
+    justify-content: space-between;
 }
 
-.clients-list img{
-    /* background-color: yellowgreen; */
-    fill: #AFB1B8;
-}
-
-.icon-clients {
-    display: inline-block;
-    /* width: 1em; */
-    /* height: 1em; */
+.clients-link{
     width: 170px;
     height: 90px;
-    stroke-width: 0;
-    stroke: currentColor;
-    /* fill: currentColor; */
-    padding: 12px;
-    --color1: var(--icon-collor);
-    /* color: #AFB1B8; */
-    /* --color1: red; */
-    /* fill: #565656; */
-    fill: #AFB1B8;
-    cursor: pointer;
-  }
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus{
+    color: #2196F3;
+    border: 1px solid #2196F3;
+}
+
+.clients-icon{
+    fill: currentColor;
+}
 
 .icon-clients:hover,
 .icon-clients:focus{
@@ -489,6 +512,10 @@ h2{
 .footer-container{
     display: flex;
     flex-direction: column;
+}
+
+.footer-address{
+    display: flex;
 }
 
 /* Лого футтера */
@@ -539,6 +566,56 @@ h2{
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* Присоединяйтесь */
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+}
+
+.footer-social p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.footer-social ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social li{
+    display: flex;
+}
+
+.footer-social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-social a:hover,
+.footer-social a:focus{
+    background: #2196F3;
+}
+
+.footer-social svg{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
 }
 
 /*Страница - портфолио*/
