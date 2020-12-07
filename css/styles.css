@@ -7,6 +7,9 @@
     --bt-second: #2196F3;
     --background-color: #2F303A;
     --icon-collor: #AFB1B8;
+    --border-color: #EEEEEE;
+    --black-color: #000000;
+    --border-header: #ECECEC;
 }
 
 *{
@@ -47,7 +50,7 @@ h2{
     background: var(--text-color-white);
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-header);
 }
 
 .header-container{
@@ -68,42 +71,18 @@ h2{
 }
 
 .logo span{
-    color: #000000;
-}
-
-/* Иконки сайта */
-.icon {
-    display: inline-block;
-    /* width: 1em;
-    height: 1em; */
-    width: 20px;
-    height: 20px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-    padding: 12px;
-    --color1: var(--icon-collor);
-  }
-
-.icon:hover{
-    --color1: #FFFFFF;
-    background-color: var(--bt-second);
-    
+    color: var(--black-color);
 }
 
 /*Навигация страницы*/
 .main-nav{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    /* padding-left: 93px; */
 }
 
 .site-nav{
     display: flex;
-    /* padding-left: auto; */
     margin-right: 305px;
-    /* justify-content: space-around; */
 }
 
 .site-nav a{
@@ -115,7 +94,6 @@ h2{
 }
 
 .site-nav li:nth-child(-n+2){
-    /* text-indent: 50px; */
     padding-right: 50px;
 }
 
@@ -136,7 +114,6 @@ h2{
 /*Контакты*/
 .contacts-nav{
     display: flex;
-    /* margin-right: auto; */
 }
 
 .contacts-nav li{
@@ -145,7 +122,6 @@ h2{
 }
 
 .contacts-nav li:nth-child(1){
-    /* text-indent: 50px; */
     padding-right: 30px;
 }
 
@@ -173,10 +149,6 @@ h2{
     padding-right: 10px;
 }
 
-.linc-icon:hover{
-    fill: currentColor;
-}
-
 .icon-email{
     width: 16px;
     height: 12px;
@@ -185,23 +157,6 @@ h2{
 .icon-smartphone{
     width: 10px;
     height: 16px;
-}
-
-.icon-contacts{
-    /* display: inline-block; */
-    /* width: 1em;
-    height: 1em; */
-    width: 20px;
-    height: 20px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-    padding-right: 10px;
-    --color1: var(--text-color-grey);
-}
-
-.icon-contacts:hover{
-    --color1: var(--accent-color);
 }
 
 /*Контент страницы*/
@@ -269,18 +224,15 @@ h2{
 }
 
 .features{
-    /* height: 101px; */
     display: flex;
     justify-content: space-between;
 }
 
 .features li{
     width: 270px;
-    /* background-color: lawngreen; */
 }
 
 .features img{
-    /* background-color: indigo; */
     padding-bottom: 30px;
 }
 
@@ -292,7 +244,6 @@ h2{
     text-transform: uppercase;
     color: var(--text-color-black);
     padding-bottom: 10px;
-    /* background-color: lightseagreen; */
 }
 
 .features p{
@@ -301,7 +252,6 @@ h2{
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--text-color-grey);
-    /* background-color: magenta; */
 }
 
 /* Чем мы занимаемся */
@@ -316,8 +266,6 @@ h2{
 }
 
 .work-div h2{
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     padding-bottom: 50px;
 }
@@ -325,9 +273,6 @@ h2{
 .work-ul{
     display: flex;
     justify-content: space-between;
-    /* margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0; */
 }
 
 .work-ul li{
@@ -359,7 +304,6 @@ h2{
 
 .commands-list li{
     width: 270px;
-    /* height: 368px; */
     height: 428px;
     background: var(--text-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -401,7 +345,7 @@ h2{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: #AFB1B8;
+    color: var(--icon-collor);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -409,39 +353,14 @@ h2{
 
 .social-list-link:hover,
 .social-list-link:focus{
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--text-color-white);
+    background-color: var(--accent-color);
 }
 
 .social-list-icon{
-    /* display: block; */
-    /* width: 44px;
-    height: 44px; */
-    /* fill: #AFB1B8; */
     width: 20px;
     height: 20px;
     fill: currentColor;
-}
-
-/* .icon-com{
-    display: inline-block;
-    /* width: 1em;
-    height: 1em; */
-    /* width: 44px;
-    height: 44px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: #AFB1B8;
-    --color1: var(--icon-collor); */
-  /* } */
-
-.icon-com:hover,
-.icon-com:focus{
-    --color1: #FFFFFF;
-    background-color: var(--bt-second);
-    border-radius: 50%;
-    fill: #FFFFFF;
-    
 }
 
 /* Постоянные клиенты */
@@ -453,7 +372,6 @@ h2{
 .clients-div{
     display: flex;
     flex-direction: column;
-
 }
 
 .clients-div h2{
@@ -474,18 +392,18 @@ h2{
 .clients-link{
     width: 170px;
     height: 90px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icon-collor);
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #afb1b8;
+    color: var(--icon-collor);
 }
 
 .clients-link:hover,
 .clients-link:focus{
-    color: #2196F3;
-    border: 1px solid #2196F3;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 .clients-icon{
@@ -494,12 +412,7 @@ h2{
 
 .icon-clients:hover,
 .icon-clients:focus{
-    /* background: var(--text-color-white); */
-    fill: #2196F3;
-    /* --color1: #FFFFFF;
-    background-color: var(--bt-second); */
-    /* border-radius: 50%; */
-    /* fill: green; */
+    fill: var(--accent-color);
 }
 
 /* Подвал страницы */
@@ -531,7 +444,6 @@ h2{
     line-height: 31px;
     letter-spacing: 0.03em;
     color: var(--bt-second);
-    /* background-color: tomato; */
 }
 
 .footer-logo span{
@@ -587,13 +499,12 @@ h2{
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--text-color-white);
     padding-bottom: 20px;
 }
 
 .footer-social-list{
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .footer-social-list li{
@@ -610,14 +521,14 @@ h2{
     align-items: center;
     width: 44px;
     height: 44px;
-    color: #FFFFFF;
+    color: var(--text-color-white);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus{
-    background: #2196F3;
+    background: var(--accent-color);
 }
 
 .footer-social-icon{
@@ -683,35 +594,19 @@ h2{
 }
 
 .projects li{
-    /* width: 370px; */
     height: 404px;
-    background: #FFFFFF;
     background: var(--text-color-white);
-    /* border: 1px solid #EEEEEE; */
-    /* box-sizing: border-box; */
 }
 
 .projects li:hover,
 .projects li:focus{
-    /* background: #FFFFFF; */
-    border: #EEEEEE;
-    /* box-sizing: border-box; */
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects a{
-    /* width: 370px;
-    height: 404px; */
-    /* background-color: magenta; */
-    /* border: 1px solid #EEEEEE; */
     display: flex;
     flex-direction: column
 }
-
-/* .projects img{
-    width: 370px;
-    height: 294px;
-} */
 
 .projects-image{
     display: flex;
@@ -722,10 +617,9 @@ h2{
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    /* background-color: lawngreen; */
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
 
 .projects h3{
