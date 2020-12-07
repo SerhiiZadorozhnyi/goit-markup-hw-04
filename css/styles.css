@@ -509,6 +509,10 @@ h2{
     padding-bottom: 60px;
 }
 
+.footer-div{
+    display: flex;
+}
+
 .footer-container{
     display: flex;
     flex-direction: column;
@@ -572,10 +576,10 @@ h2{
 .footer-social{
     display: flex;
     flex-direction: column;
-    width: 206px;
+    margin-left: 85px;
 }
 
-.footer-social p{
+.footer-social-description{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -587,16 +591,20 @@ h2{
     padding-bottom: 20px;
 }
 
-.footer-social ul{
+.footer-social-list{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-.footer-social li{
+.footer-social-list li{
     display: flex;
 }
 
-.footer-social a{
+.footer-social-list li:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer-social-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -607,12 +615,12 @@ h2{
     border-radius: 50%;
 }
 
-.footer-social a:hover,
-.footer-social a:focus{
+.footer-social-link:hover,
+.footer-social-link:focus{
     background: #2196F3;
 }
 
-.footer-social svg{
+.footer-social-icon{
     fill: currentColor;
     width: 20px;
     height: 20px;
@@ -675,19 +683,38 @@ h2{
 }
 
 .projects li{
-    width: 370px;
+    /* width: 370px; */
     height: 404px;
     background: #FFFFFF;
     background: var(--text-color-white);
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
+    /* border: 1px solid #EEEEEE; */
+    /* box-sizing: border-box; */
+}
+
+.projects li:hover,
+.projects li:focus{
+    /* background: #FFFFFF; */
+    border: #EEEEEE;
+    /* box-sizing: border-box; */
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects a{
     /* width: 370px;
     height: 404px; */
-    background-color: magenta;
+    /* background-color: magenta; */
     /* border: 1px solid #EEEEEE; */
+    display: flex;
+    flex-direction: column
+}
+
+/* .projects img{
+    width: 370px;
+    height: 294px;
+} */
+
+.projects-image{
+    display: flex;
 }
 
 .projects-text{
@@ -695,7 +722,10 @@ h2{
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
-    background-color: lawngreen;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    /* background-color: lawngreen; */
 }
 
 .projects h3{
